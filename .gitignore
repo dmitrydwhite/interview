@@ -1,0 +1,46 @@
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.settings
+
+# play-maven-plugin
+lib/
+
+# Emacs
+*~
+
+# Vim
+*.swp
+**/*.swp
+
+# Output Folders
+data/
+target/
+dependency-reduced-pom.xml
+
+# Log Files
+*.log
+
+# MacOSX
+.DS_Store
+/.project
+
+bower_components
+app/bower_components
+node_modules
+.tmp
+.sass-cache/
+.idea
+none
+*.iml
+srv
+dist
+target
+docs
+npm-debug.log
+.swp
+.swo
