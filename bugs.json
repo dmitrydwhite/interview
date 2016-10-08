@@ -1,0 +1,144 @@
+{
+  "bugs": [
+    {
+      "id": 1,
+      "userId": 1,
+      "description": "clean up all those console logs!",
+      "points": 1,
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "description": "add service calls",
+      "points": 16,
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "description": "dev ops shenanigans",
+      "points": 16,
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "description": "set up new desk",
+      "points": 8,
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "description": "prep meeting notes",
+      "points": 2,
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 6,
+      "description": "migrate from Bootstrap to Angular Material",
+      "points": 4,
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 7,
+      "description": "move inline styles to sass",
+      "points": 16,
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 8,
+      "description": "go on a vacation!",
+      "points": 2,
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 9,
+      "description": "finish designing mockups",
+      "points": 8,
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 10,
+      "description": "write up meeting notes",
+      "points": 2,
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 11,
+      "description": "Complete React tutorials",
+      "points": 2,
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 12,
+      "description": "Write ElasticSearch queries",
+      "points": 8,
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 13,
+      "description": "Read up on Scala",
+      "points": 16,
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 14,
+      "description": "Do Scala hw for book club",
+      "points": 16,
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 15,
+      "description": "Refactor Search module",
+      "points": 16,
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 16,
+      "description": "Update search aggregations",
+      "points": 4,
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 17,
+      "description": "Work on question board bug",
+      "points": 16,
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 18,
+      "description": "Consolidate card components",
+      "points": 4,
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 19,
+      "description": "Add new layers to map component",
+      "points": 2,
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 20,
+      "description": "Buy new headphones",
+      "points": 2,
+      "completed": false
+    }
+  ]
+}

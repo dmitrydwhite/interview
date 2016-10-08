@@ -2,6 +2,15 @@
 
 This project is a basic application to create/read/update/delete a list of bugs.  It is unstyled and has gaps in functionality marked with TODOs.  Fill out the missing code to make this app great again!
 
+```
+TODOs
+
+bucktracker.directive.js
+bucktracker.factory.js
+app.css
+```
+
+
 ### Prerequisites
 
 First you must have node.js and its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/)

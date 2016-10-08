@@ -1,0 +1,79 @@
+<div>
+  <form ng-submit="addNewBug(form)">
+    <input ng-model="form.description" type="text" placeholder="Description" name="description" />
+    <label for="points">Point rating</label>
+    <select ng-model="form.points" id="points">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="4">4</option>
+      <option value="8">8</option>
+      <option value="16">16</option>
+    </select>
+    <input type="submit" value="Add New"  />
+  </form>
+
+  <div>
+    <h3>Bug List</h3>
+    <span>
+      <label for="all">All</label>
+      <input type="radio" id="all" name="completedFilter" ng-model="completedFilter" value="all"'/>
+      <label for="done">Done</label>
+      <input type="radio" id="done" name="completedFilter" ng-model="completedFilter" value="true"' />
+      <label for="notdone">Not Done</label>
+      <input type="radio" id="notdone" name="completedFilter" ng-model="completedFilter" value="false"' />
+    </span>
+  </div>
+
+  <div ng-show="true">
+    <table class="bug-table">
+      <thead>
+        <th>Status</th>
+        <th>Description</th>
+        <th>Points</th>
+        <th>Actions</th>
+      </thead>
+      <tbody>
+        <tr ng-repeat="bug in filteredList(completedFilter) | orderBy: 'points'">
+          <td>
+            {{bug.id}}
+            <input type="checkbox" ng-model="bug.completed" ng-change="updateBug(bug)" />
+          </td>
+          <td class="description">{{bug.description}}</td>
+          <td>{{bug.points}}</td>
+          <td><input type="button" value="Delete" ng-click="deleteBug(bug)" /></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Totals</h3>
+    <table class="bug-table">
+      <thead>
+      <th></th>
+      <th>1pt</th>
+      <th>2pts</th>
+      <th>4pts</th>
+      <th>8pts</th>
+      <th>16pts</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Count</td>
+        <td>{{getTotal(1, completedFilter)}}</td>
+        <td>{{getTotal(2, completedFilter)}}</td>
+        <td>{{getTotal(4, completedFilter)}}</td>
+        <td>{{getTotal(8, completedFilter)}}</td>
+        <td>{{getTotal(16, completedFilter)}}</td>
+      </tr>
+      <tr>
+        <td>Sum</td>
+        <td>{{getSum(1, completedFilter)}}</td>
+        <td>{{getSum(2, completedFilter)}}</td>
+        <td>{{getSum(4, completedFilter)}}</td>
+        <td>{{getSum(8, completedFilter)}}</td>
+        <td>{{getSum(16, completedFilter)}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
