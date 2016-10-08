@@ -122,7 +122,7 @@ function bugtracker(BugsService) {
      *
      * ex: show me the number of 4 point bugs that are marked "done".
      */
-    $scope.getTotal = function(points, completedFilter) {
+    $scope.getTotal = function(pointValue, completedFilter) {
       // TODO - use array filter to calculate totals of each point value
     };
 
