@@ -35,7 +35,6 @@
       <tbody>
         <tr ng-repeat="bug in filteredList(completedFilter) | orderBy: 'points'">
           <td>
-            {{bug.id}}
             <input type="checkbox" ng-model="bug.completed" ng-change="updateBug(bug)" />
           </td>
           <td class="description">{{bug.description}}</td>
