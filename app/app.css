@@ -1,3 +1,66 @@
-/*
-  TODO - styling goes in here
-*/
+@import './columns.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1, h3 {
+  padding: 7px;
+  margin-bottom: 9px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h3 {
+  border-top: 1px solid darkgrey;
+}
+
+.add-bug-input {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+
+.points-row {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.points-row>select {
+  border: 1px solid lightgrey;
+  background-color: rgb(255, 245, 238);
+}
+
+.submit-btn-container {
+  margin-top: 20px;
+}
+
+.add-bug-btn {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+
+.bug-filters {
+  text-align: left;
+  padding-left: 4px;
+  margin-bottom: 11px;
+}
+
+th, td {
+  padding: 0;
+}
+
+td {
+  border-top: 1px solid lightgrey;
+  padding-top: 3px;
+}
+
+.description {
+  text-align: left;
+}
+
+.bug-table {
+  border-top: 1px solid lightgrey;
+}
