@@ -10,6 +10,12 @@
 function BugsService($http) {
 
   /**
+   * The endpoint for data storage / retrieval.
+   * @type {String}
+   */
+  var DATA_ENDPOINT = 'http://localhost:3000/bugs/';
+
+  /**
    * create new
    * POST    /bugs
    *
@@ -17,7 +23,14 @@ function BugsService($http) {
    * @returns {Promise}
    */
   function create(payload) {
-    // TODO - use POST to create new bug
+    return $http({
+      url: DATA_ENDPOINT,
+      method: 'POST',
+      dataType: 'json',
+      data: payload
+    }).then((response) => {
+      return response.data;
+    });
   }
 
   /**
@@ -28,7 +41,13 @@ function BugsService($http) {
    * @returns {Promise}
    */
   function del(id) {
-    // TODO - use DELETE to remove a bug
+    return $http({
+      url: DATA_ENDPOINT + id,
+      method: 'DELETE',
+      dataType: 'json'
+    }).then((response) => {
+      return response;
+    });
   }
 
   /**
@@ -39,7 +58,7 @@ function BugsService($http) {
    */
   function get() {
     return $http({
-      url: 'http://localhost:3000/bugs',
+      url: DATA_ENDPOINT,
       method: 'GET',
       dataType: 'json',
     }).then((response) => {
@@ -53,7 +72,14 @@ function BugsService($http) {
    * @returns {Promise}
    */
   function update(payload) {
-    // TODO - update single bug
+    return $http({
+      url: DATA_ENDPOINT + payload.id,
+      method: 'PATCH',
+      dataType: 'json',
+      data: payload
+    }).then((response) => {
+      return response.data;
+    });
   }
 
   return {
